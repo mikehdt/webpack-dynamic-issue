@@ -1,0 +1,35 @@
+{
+    "plugins": [
+        "react-hot-loader/babel",
+        "loadable-components/babel"
+    ],
+    "presets": [
+        ["env", {
+            "node": "current",
+            "browsers": [
+                "> 0.25%",
+                "ie >= 11",
+                "Edge >= 13",
+                "Safari >= 10",
+                "iOS >= 10"
+            ]
+        }],
+        "react"
+    ],
+    "env": {
+        "node": {
+            "plugins": [
+                "babel-plugin-dynamic-import-node"
+            ]
+        },
+        "test": {
+            "presets": [
+                ["env", {
+                    "targets": {
+                        "node": "current"
+                    }
+                }]
+            ]
+        }
+    }
+}

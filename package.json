@@ -1,0 +1,30 @@
+{
+  "name": "webpack-dynamic-issue",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server --open --mode development",
+    "build": "webpack --progress",
+    "start-broken": "yarn add webpack@4.10.2 && yarn start",
+    "start-working": "yarn add webpack@4.9.2 && yarn start"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-dynamic-import-node": "^1.2.0",
+    "babel-plugin-react-transform": "^3.0.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "loadable-components": "^2.2.2",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-hot-loader": "^4.3.0",
+    "webpack": "4.9.2",
+    "webpack-cli": "^3.0.3",
+    "webpack-dev-server": "^3.1.4",
+    "webpack-hot-middleware": "^2.22.2"
+  }
+}
