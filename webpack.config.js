@@ -14,7 +14,6 @@ const config = {
         path: __dirname + '/dist',
     },
     plugins: [
-        new webpack.NamedModulesPlugin(),
         new webpack.HotModuleReplacementPlugin(),
         new HtmlWebPackPlugin({
             template: './src/index.html',
