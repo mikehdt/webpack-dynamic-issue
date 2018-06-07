@@ -11,7 +11,9 @@ To start, clone the repo, run `yarn` to install all the dependencies.
 ## Scripts
 
 `yarn start` will begin the project as expected
+
 `yarn start-broken` will install Webpack 4.10.2 and then `start`
+
 `yarn start-working` will install Webpack 4.9.2 and then `start`
 
 ## How to test
